@@ -1,0 +1,81 @@
+@import '../../assets/scss/default';
+
+.quiz {
+  &-body {
+    margin-top: 2rem;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-title {
+    font-weight: 800;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  &-subtitle {
+    margin-top: 2rem;
+    color: $color-gray-200;
+    font-weight: 400;
+    font-size: 17px;
+    text-align: center;
+
+    &-additional {
+      margin-top: 4rem;
+      font-weight: 500;
+      font-size: 12px;
+      color: $color-gray-400;
+
+      .color-pink {
+        color: $color-pink;
+      }
+    }
+  }
+
+  &-selects {
+    margin-top: 2rem;
+    width: 100%;
+
+    &__single-select {
+      &-image {
+        display: flex;
+        justify-content: center;
+        grid-gap: 20px;
+      }
+    }
+
+    &__bubble {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      width: fit-content;
+      gap: 10px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &-next {
+    background-color: $color-pink;
+    height: 55px;
+    width: calc(100% - 2rem);
+    border-radius: 5rem;
+    color: $color-white;
+    font-size: 16px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: opacity .3s;
+    position: fixed;
+    bottom: 20px;
+
+    &.is-disable {
+      z-index: -1;
+      opacity: .4;
+    }
+  }
+}

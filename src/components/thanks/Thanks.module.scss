@@ -1,0 +1,68 @@
+@import '../../assets/scss/default';
+
+.thanks {
+  height: calc(100vh - 2.5rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6rem;
+  color: $color-gray-100;
+
+  &-title {
+    font-family: "Niconne", cursive;
+    font-weight: 400;
+    font-size: 36px;
+  }
+
+  &-image {
+    margin-top: 6rem;
+
+    img {
+      width: 120px;
+    }
+  }
+
+  &-download {
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    color: $color-gray-100;
+
+    &:hover {
+      .thanks-download__text {
+        color: $color-pink;
+      }
+
+      svg {
+        fill: $color-pink;
+      }
+    }
+
+    &__text {
+      transition: color .3s;
+    }
+
+    svg {
+      width: 30px;
+      height: 30px;
+      transition: fill .3s;
+      margin-right: 1rem;
+    }
+  }
+
+  &-retake {
+    background-color: $color-pink;
+    height: 55px;
+    width: calc(100% - 2rem);
+    border-radius: 5rem;
+    color: $color-white;
+    font-size: 16px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

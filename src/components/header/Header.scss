@@ -1,0 +1,51 @@
+@import '../../assets/scss/default';
+
+.header {
+  display: flex;
+  flex-direction: column;
+
+  &-order {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    margin-bottom: 10px;
+    position: relative;
+
+    .order {
+      &-active {
+        color: $color-pink;
+      }
+
+      &-total {
+        color: $color-gray;
+      }
+
+      &-delimiter {
+        font-weight: 500;
+        margin: 0 .2rem;
+      }
+
+      &-back {
+        svg {
+          width: 20px;
+          height: 20px;
+          fill: $color-white;
+          position: absolute;
+          left: .5rem;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+
+  .progress {
+    height: 4px;
+
+    .progress-bar {
+      background-color: $color-pink;
+      border-radius: 4px;
+    }
+  }
+}

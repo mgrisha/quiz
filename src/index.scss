@@ -1,0 +1,18 @@
+@import 'assets/scss/default.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Albert Sans", sans-serif;
+  font-style: normal;
+  background: $body-bg;
+  color: $color-gray-040;
+}
+
+#root {
+  padding: 1.5rem 1rem 1rem;
+}
